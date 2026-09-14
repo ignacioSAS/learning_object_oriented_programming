@@ -102,7 +102,28 @@ mi_perro.especie
 a la misma.'''
 
 #-----------------------------------------DEFINIENDO METODOS------------------------------------#
-'''E realidad ciando usamos __init__ anteriormente ya estabamos definiendo un metodo solo que uno especial.
+'''En realidad cuando usamos __init__ anteriormente ya estabamos definiendo un metodo solo que uno especial.
 Acontinuacion vamos a ver como definir metodos que le den alguna funcionalidad interesante a nuestra clase, vamos a 
 codificar dos metodos ladrar y caminar, el primero no recibira ningun metodo y el segundo recibira el numero de pasos
-que queremos andar. '''
+que queremos andar. Como hemos indicado anteriormente < self > hace referencia a la insatancia de la clase, se puede
+definir un metodo con < def > y el nombre entre () los parametros de entrada que recibe donde sienpre tendra que estar
+< self > primero.'''
+
+class Perro:
+    #Atributo de clase
+    especie = 'mamifero'
+
+    #El metodo __init__ es llamado al crear el objeto
+    def __init__(self,nombre,raza):
+        print(f'Creando perro {nombre}, {raza}')
+
+        #Atributos de instancia
+        self. nombre = nombre
+        self. raza = raza
+
+    def ladra (self):
+        print('guau')
+
+    def camina (self , pasos):
+        print(f'Caminando {pasos} pasos')
+        
