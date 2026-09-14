@@ -35,7 +35,7 @@ Nombre de la variable es igual a la clase agrenado () dentro de los cuales iran 
 en el caso necesario '''
 
 #Creamos un obejeto de la clase perro
-mi_perro = perro()
+mi_perro = Perro()
 
 #-------------------------------DEFIENIENDO ATRIBUTOS----------------------------#
 
@@ -98,3 +98,11 @@ mi_perro = Perro('Toby','Bulldog')
 mi_perro.especie
 #'Mamifero'
 
+'''De esta manera todos los objetos que se creen de la clase perro compartiran ese atributo de clase ya que pertenecen
+a la misma.'''
+
+#-----------------------------------------DEFINIENDO METODOS------------------------------------#
+'''E realidad ciando usamos __init__ anteriormente ya estabamos definiendo un metodo solo que uno especial.
+Acontinuacion vamos a ver como definir metodos que le den alguna funcionalidad interesante a nuestra clase, vamos a 
+codificar dos metodos ladrar y caminar, el primero no recibira ningun metodo y el segundo recibira el numero de pasos
+que queremos andar. '''
