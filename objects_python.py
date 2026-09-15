@@ -127,3 +127,13 @@ class Perro:
     def camina (self , pasos):
         print(f'Caminando {pasos} pasos')
         
+'''Por lo tanto si creamos el objeto objeto mi_perro podemos hacer uso de sus metodos llamandolos con < . > y el
+nombre del metodo como si de una funcion se tratase. Puede recibir y devolver argumentos.'''
+
+mi_perro = ('Toby', 'Bulldog')
+mi_perro.ladra()
+mi_perro.camina(10)
+
+#Creando mi perro Toby,Bulldog
+#Guau
+#Caminando 10 pasos
