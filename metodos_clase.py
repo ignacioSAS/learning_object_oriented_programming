@@ -59,3 +59,22 @@ Clase.metodoclase()
 '''Por lo tanto los metodos de clase:
 *No pueden acceder a los atributos de la instancia.
 *Pero si pueden modificar los atributos de la clase.'''
+
+#---------------------------------METODOS ESTATICOS-------------------------------#
+'''Por ultimo los metodos estaticos se pueden definir con el decorador @staticmethod yno haceptan como parametro
+ni la instancia ni la clase, es por eyo que no pueden modificar el estado ni la clase de la instancia. Pero pueden
+haceptar parametros de entrada'''
+
+class Clase:
+  @staticmethod
+  def metodoestatico():
+    return 'Metodo estatico'
+
+mi_clase = Clase()
+Clase.metodoestatico()
+mi_clase.metodoestatico()
+#'Metodo estatico'
+#'Metodo estatico'
+
+'''Por lo tanto el uso de los metodos estaticos puede resultar util para indicar que un metodo no modificara el estado
+de la insatancia ni de la clase'''
